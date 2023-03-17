@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6f3ff"
     tools:context=".About">
+
     <LinearLayout
         android:layout_width="275dp"
         android:layout_height="38dp"
@@ -12,13 +14,13 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="74dp"
-        android:layout_marginTop="82dp"
         android:layout_marginEnd="62dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="16dp"
         android:background="#e6f3ff"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
