@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6f3ff"
     tools:context=".Contact">
 
     <LinearLayout
@@ -72,92 +73,92 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/number"
                 android:inputType="phone"
                 android:minHeight="48dp"
-                android:text="@string/number1"
-                android:autofillHints="" />
+                android:text="@string/number1" />
 
         </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
 
-                    <TextView
-                        android:id="@+id/adtext"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Address"
-                        android:textSize="24sp" />
+            <TextView
+                android:id="@+id/adtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Address"
+                android:textSize="24sp" />
 
-                    <EditText
-                        android:id="@+id/addressed"
-                        android:layout_width="279dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:minHeight="48dp"
-                        android:text="address" />
-                </LinearLayout>
+            <EditText
+                android:id="@+id/addressed"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="address" />
+        </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
 
-                    <TextView
-                        android:id="@+id/emailte"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Email"
-                        android:textSize="24sp" />
+            <TextView
+                android:id="@+id/emailte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email"
+                android:textSize="24sp" />
 
-                    <EditText
-                        android:id="@+id/emailed"
-                        android:layout_width="279dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:minHeight="48dp"
-                        android:text="email" />
-                </LinearLayout>
+            <EditText
+                android:id="@+id/emailed"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="email" />
+        </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="20dp">
 
-                    <TextView
-                        android:id="@+id/textme"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:height="48dp"
-                        android:minHeight="48dp"
-                        android:text="Message"
-                        android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:minHeight="48dp"
+                android:text="Message"
+                android:textSize="24sp" />
 
-                    <EditText
-                        android:id="@+id/messageed"
-                        android:layout_width="279dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:minHeight="48dp"
-                        android:text="message" />
-                </LinearLayout>
+            <EditText
+                android:id="@+id/messageed"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="message" />
+        </LinearLayout>
     </LinearLayout>
 
     <Button

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
@@ -70,6 +71,40 @@ public class Course extends AppCompatActivity {
                             MyGridAdapter adapter= new MyGridAdapter(Course.this,names,descriptions);
                             grid.setAdapter(adapter);
 
+                            grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                @Override
+                                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                    switch (position) {
+                                        case 0:
+                                            Intent intent = new Intent(Course.this, Singlepage.class);
+                                            intent.putExtra("code", names[position]);
+                                            startActivity(intent);
+                                            break;
+                                        case 1:
+                                            Intent intent1 = new Intent(Course.this, Singlepage.class);
+                                            intent1.putExtra("code", names[position]);
+                                            startActivity(intent1);
+                                            break;
+                                        case 2:
+                                            Intent intent2 = new Intent(Course.this, Singlepage.class);
+                                            intent2.putExtra("code", names[position]);
+                                            startActivity(intent2);
+                                            break;
+                                        case 3:
+                                            Intent intent3 = new Intent(Course.this, Singlepage.class);
+                                            intent3.putExtra("code", names[position]);
+                                            startActivity(intent3);
+                                            break;
+                                        case 4:
+                                            Intent intent4 = new Intent(Course.this, Singlepage.class);
+                                            intent4.putExtra("code", names[position]);
+                                            startActivity(intent4);
+                                            break;
+                                    }
+                                }
+
+                            });
+
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -85,7 +120,11 @@ public class Course extends AppCompatActivity {
             }
         });
 
+        // Add the request to the RequestQueue.
+
+
 // Add the request to the RequestQueue.
+
         queue.add(stringRequest);
         about.setOnClickListener(new View.OnClickListener() {
             @Override
